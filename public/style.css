@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* Body */
+body {
+  width: 100%;
+  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+  overflow: hidden;
+  user-select: none;
+  height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+  margin: 5% auto;
+  width: 90%;
+  height: 80%;
+  background-color: #fff;
+  overflow: scroll;
+  overflow-x: hidden;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Header */
+header {
+  font-size: 45px;
+  font-weight: 800;
+  color: black;
+  padding: 15px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* Input Div */
+.input-field {
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  user-select: none;
+  margin-bottom: 5px;
+}
+
+/* Input Field */
+.input-field input {
+  padding-left: 5px;
+  height: 100%;
+  font-size: 1rem;
+  border: 1px solid #8e49e8;
+  color: black;
+  outline: none;
+  user-select: none;
+}
+
+button {
+  width: 40px;
+  height: 100%;
+  font-size: 19px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+  background-color: #8e49e8;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Update Button */
+#update-Btn {
+  width: 40px;
+  height: 100%;
+  font-size: 19px;
+  text-align: center;
+  background-color: #8e49e8;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+/* List Div */
+.div {
+  background-color: #497be8;
+  width: 90%;
+  height: auto;
+  user-select: none;
+  margin-top: 30px;
+}
+
+/* Ul List */
+ul {
+  list-style: none;
+  font-size: 20px;
+  color: #fff;
+  user-select: none;
+  width: 100%;
+  /* margin-top: 10px; */
+}
+
+ul :hover {
+  cursor: pointer;
+}
+
+/* list Items */
+li {
+  display: flex;
+  user-select: none;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+}
+
+li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li div button {
+  margin-right: 10px;
+  height: 90%;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #497be8;
+  user-select: none;
+  width: fit-content;
+}
+
+@media (max-width: 350px) and (min-width: 300px) {
+  button {
+    width: 40px;
+    height: 100%;
+  }
+}
+@media (max-width: 350px) and (min-width: 300px) {
+  input {
+    width: 60%;
+    height: 50%;
+    margin-left: 5px;
+  }
+}
