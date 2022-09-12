@@ -75,7 +75,7 @@ let data = () => {
 
 // Creating Delete Button
 let delBtn = (del) => {
-  del.parentNode.parentNode.remove();
+ del.parentNode.parentNode.parentNode.parentNode.remove(del);
   let updateBtn = document.getElementById("update-Btn");
   updateBtn.style.display = "none";
   let inp = document.getElementById("input");
@@ -93,6 +93,7 @@ let editBtn = (edit) => {
   // updateBtn.setAttribute("onClick", "upBtn(this)");
   updateBtn.style.display = "inline-block";
   edit.style.display = "none"
+  document.getElementById("add").style.display = "none"
 };
 
 // Creating Completed Button
@@ -115,5 +116,6 @@ function update() {
     document.getElementById("update-Btn").style.display = "none";
     document.getElementById("input").value = "";
     document.getElementById("edit-btn").style.display = "flex"
+    document.getElementById("add").style.display = "inline-block"
   }
 }
