@@ -45,7 +45,6 @@ let data = () => {
         delBtn.setAttribute("id", "del-btn");
         delBtn.setAttribute("onClick", "delBtn(this)");
         delBtn.appendChild(btnText);
-
         // Creating Edit Button
         let editBtn = document.createElement("button");
         let editText = document.createTextNode("Edit");
@@ -93,6 +92,7 @@ let editBtn = (edit) => {
   let updateBtn = document.getElementById("update-Btn");
   // updateBtn.setAttribute("onClick", "upBtn(this)");
   updateBtn.style.display = "inline-block";
+  edit.style.display = "none"
 };
 
 // Creating Completed Button
@@ -114,5 +114,6 @@ function update() {
       document.getElementById("input").value;
     document.getElementById("update-Btn").style.display = "none";
     document.getElementById("input").value = "";
+    document.getElementById("edit-btn").style.display = "flex"
   }
 }
