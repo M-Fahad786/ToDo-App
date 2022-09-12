@@ -134,13 +134,13 @@ li div button {
   width: fit-content;
 }
 
-@media (max-width: 350px) and (min-width: 230px) {
+@media screen and (max-width: 350px) and (min-width: 230px) {
   button {
     width: 28px;
     height: 100%;
   }
 }
-@media (max-width: 350px) and (min-width: 230px) {
+@media screen and (max-width: 350px) and (min-width: 230px) {
   input {
     width: 55%;
     height: 70%;
@@ -148,7 +148,7 @@ li div button {
     font-size: 10px;
   }
 }
-@media (max-width: 350px) and (min-width: 230px) {
+@media screen and (max-width: 350px) and (min-width: 230px) {
   #update-Btn {
     width: 28px;
     height: 100%;
