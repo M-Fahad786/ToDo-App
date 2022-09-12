@@ -37,6 +37,7 @@ let data = () => {
         let li = document.createElement("li"); // Making List Items
         li.setAttribute("id", "li-item");
         let liText = document.createTextNode(dataArray[i].userInput);
+
         var myDiv = document.createElement("div");
 
         // Creating Del Button
@@ -83,6 +84,7 @@ let delBtn = (del) => {
 };
 
 // Creating Edit Button
+var editId;
 let editBtn = (edit) => {
   let inp = document.getElementById("input");
   var edit_btn = edit.parentNode.parentNode.firstChild.nodeValue;
@@ -103,7 +105,7 @@ let compBtn = (comp) => {
   comp.previousSibling.previousSibling.style.backgroundColor = "green";
   comp.parentNode.parentNode.style.backgroundColor = "green";
 };
-var editId;
+
 
 function update() {
   if (document.getElementById("input").value === "") {
